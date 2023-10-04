@@ -1,3 +1,4 @@
+import Footer from '@/components/footer'
 import Form from '@/components/form/form'
 import Header from '@/components/header'
 import NavBar from '@/components/nav-bar'
@@ -10,6 +11,7 @@ export default function Home() {
     <Header/>
     <Form/>
     <Slider/>
+    <Footer/>
   </div>
   )
 }
