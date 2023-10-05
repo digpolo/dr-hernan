@@ -1,6 +1,6 @@
 import React from 'react'
-import Input from '../slider/input'
-import TextArea from '../slider/text-area'
+import Input from '../input'
+import TextArea from '../text-area'
 
 const Form = () => {
   return (
