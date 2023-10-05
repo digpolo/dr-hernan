@@ -31,10 +31,12 @@ const Footer = () => {
                     <h2 className='text-white py-3 font-semibold text-[16px]'>Siguenos</h2>
                     <ul className='text-white gap-3 flex flex-col font-thin'>
                         <li className='font-light'>
+                        <Link href="https://www.instagram.com/drhernanjojoa/" target="_blank" rel="noopener noreferrer">
                             Instagram
+                            </Link>
                         </li>
                         <li>
-                            <Link href="https://www.facebook.com/trespagos.latam">
+                            <Link href="https://www.facebook.com/drhernanjojoa" target="_blank" rel="noopener noreferrer">
                                 Facebook
                             </Link>
                         </li>
@@ -43,9 +45,9 @@ const Footer = () => {
                 <div>
                     <h2 className='text-white py-3 font-semibold text-[16px] '>Informaci&oacute;n de inter&eacute;s</h2>
                     <ul className='grid grid-cols-1 text-white  gap-3 flex justify-between'>
-                        <li><Link href="/gestion-de-cookies">Política de privacidad</Link></li>
-                        <li><Link href="/Privacy/TermsAndConditions">Terminos y condiciones</Link></li>
-                        <li><Link href="/gestion-de-cookies">Politicas de cookies </Link></li>
+                        <li><Link href="/politica-de-privacidad">Política de privacidad</Link></li>
+                        <li><Link href="/terminos-y-condiciones">Terminos y condiciones</Link></li>
+                        <li><Link href="/politica-de-cookies">Politicas de cookies </Link></li>
                     </ul>
                 </div>
             </div>
