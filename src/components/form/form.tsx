@@ -21,7 +21,7 @@ const Form = () => {
         <label>Me gustaria registrarme con mi dirección de correo eléctronico para recibir el boletín  de Dr. Hernan Jojoa con actualizaciones, recursos valiosos y consejos útiles.</label>
       </div>
       <button className='bg-[#333333] py-4 rounded-lg my-14 font-medium text-lg  py-10'>
-        Agendar cita
+        Agendar cita 
       </button>
     </div>
   )
