@@ -14,27 +14,35 @@ const page = () => {
                 <p className='font-extralight text-[16px]'>Al utilizar nuestra aplicación, los usuarios aceptan los siguientes términos y condiciones:</p>
 
                 <h4 className="py-14 font-semibold text-[16px] text-green">1. Aceptación de los Términos y Condiciones</h4>
-                <p className='font-extralight text-[16px]'>
-                    Al acceder y utilizar este sitio web de amapola corsets, aceptas cumplir y estar sujeto a los siguientes términos y condiciones de uso. Si no estás de acuerdo con estos términos y condiciones, por favor, no utilices este sitio.
-                </p>
+                <ul className='font-extralight text-[16px]'>
+                    <li>Propósito: La Aplicación está diseñada para proporcionar información sobre nuestros servicios odontológicos y facilitar la programación de citas y consultas.</li>
+                    <li>Acceso y Cuentas: Para utilizar ciertas funciones de la Aplicación, es posible que deba crear una cuenta. Usted es responsable de mantener la confidencialidad de su información de inicio de sesión y de cualquier actividad que ocurra en su cuenta.</li>
+                    <li>Uso Apropiado: Usted se compromete a utilizar la Aplicación de manera legal y apropiada, sin violar ninguna ley aplicable ni infringir los derechos de terceros.</li>
+                </ul>
 
-                <h4 className="py-14 font-semibold text-[16px] text-green">2. Uso del Sitio Web</h4>
-                <p className='font-extralight text-[16px]'>
-                    Te comprometes a proporcionar información precisa y completa al realizar pedidos en este sitio web, no puedes utilizar este sitio web con fines ilegales o no autorizados.
-                </p>
-                <h4 className="py-14 font-semibold text-[16px] text-green">3. Compras y Pagos</h4>
-                <p className='font-extralight text-[16px]'>
-                    Aceptamos los siguientes métodos de pago, transferencia por PSE, Efecty, los pedidos están sujetos a disponibilidad y confirmación. Nos reservamos el derecho de cancelar o rechazar cualquier pedido en cualquier momento por cualquier motivo.
-                </p>
-                <h4 className="py-14 font-semibold text-[16px] text-green">4. Envío y Entrega</h4>
-                <p className='font-extralight text-[16px]'>
-                    No nos hacemos responsables de retrasos en la entrega causados por factores fuera de nuestro control.
-                </p>
-                <h4 className="py-14 font-semibold text-[16px] text-green">5.  Propiedad Intelectual</h4>
-                <p className='font-extralight text-[16px]'>
-                    Todos los contenidos de este sitio web, incluyendo pero no limitado a textos, imágenes, logotipos y diseños, están protegidos por derechos de autor y otros derechos de propiedad intelectual.
+                <h4 className="py-14 font-semibold text-[16px] text-green">2. Información y Privacidad</h4>
+                <ul className='font-extralight text-[16px]'>
+                    <li>Política de Privacidad: Su uso de la Aplicación está sujeto a nuestra Política de Privacidad, que describe cómo recopilamos, utilizamos y protegemos su información personal. Lea nuestra Política de Privacidad detenidamente.</li>
+                    <li>Precisión de la Información: Nos esforzamos por proporcionar información precisa en la Aplicación, pero no garantizamos la precisión, integridad o actualidad de la información proporcionada.</li>
+                </ul>
 
-                    No puedes utilizar, reproducir o distribuir estos contenidos sin autorización previa por escrito.
+                <h4 className="py-14 font-semibold text-[16px] text-green">3. Citas y consultas</h4>
+                <ul className='font-extralight text-[16px]'>
+                    <li>Programación: Puede utilizar la Aplicación para programar citas odontológicas y enviar consultas. Toda cita está sujeta a la disponibilidad de horarios.</li>
+                    <li>Confirmación: Le enviaremos una confirmación de su cita o consulta a través de la información de contacto que proporcione. Asegúrese de que su información de contacto sea precisa.</li>
+                </ul>
+
+                <h4 className="py-14 font-semibold text-[16px] text-green">4. Limitación de Responsabilidad</h4>
+                <p className='font-extralight text-[16px]'>
+                    Uso a su Propio Riesgo: El uso de la Aplicación es bajo su propio riesgo. No nos hacemos responsables por daños directos, indirectos, incidentales o consecuentes que puedan surgir del uso de la Aplicación.
+                    Modificaciones y Terminación
+
+                    Nos reservamos el derecho de modificar, suspender o descontinuar la Aplicación en cualquier momento sin previo aviso. También podemos terminar o suspender su acceso a la Aplicación en caso de incumplimiento de estos Términos y Condiciones.
+
+                </p>
+                <h4 className="py-14 font-semibold text-[16px] text-green">5.  Ley aplicable</h4>
+                <p className='font-extralight text-[16px]'>
+                    Estos Términos y Condiciones se regirán e interpretarán de acuerdo con las leyes vigentes en Colombia
 
                 </p>
                 <h4 className="py-14 font-semibold text-[16px] text-green">6. Modificaciones de los Términos y Condiciones</h4>
@@ -43,9 +51,7 @@ const page = () => {
                 </p >
                 <h4 className="py-14 font-semibold text-[16px] text-green">7. Contacto</h4>
                 <p className='font-extralight text-[16px]'>
-                    Si tienes alguna pregunta o inquietud con respecto a estos términos y condiciones, puedes ponerte en contacto con nosotros a través de nuestro numero de WhatsApp +57 3105307440.
-
-
+                    Si tienes alguna pregunta o inquietud con respecto a estos términos y condiciones, puedes ponerte en contacto con nosotros a través de nuestros canales de comunicación.
                 </p>
             </div>
             <Footer />

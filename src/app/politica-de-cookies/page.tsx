@@ -9,44 +9,45 @@ const page = () => {
             <NavBar />
             <NavBarPrivacy />
             <div className='mx-4'>
-                <h3 className="my-5 text-green py-14 font-semibold text-[30px]">Terminos y condiciones</h3>
+                <h3 className="my-5 text-green py-14 font-semibold text-[30px]">Políticas de cookies</h3>
 
-                <p className='font-extralight text-[16px]'>Al utilizar nuestra aplicación, los usuarios aceptan los siguientes términos y condiciones:</p>
+                <p className='font-extralight text-[16px]'>Esta Política de Cookies describe cómo Dr. Hernan Jojoa utilizamos cookies y tecnologías similares en nuestra aplicación móvil y sitio web. Al usar la Aplicación, usted acepta el uso de cookies de acuerdo con esta política.</p>
 
-                <h4 className="py-14 font-semibold text-[16px] text-green">1. Aceptación de los Términos y Condiciones</h4>
+                <h4 className="py-14 font-semibold text-[16px] text-green">1. ¿Qué son las Cookies?</h4>
                 <p className='font-extralight text-[16px]'>
-                    Al acceder y utilizar este sitio web de amapola corsets, aceptas cumplir y estar sujeto a los siguientes términos y condiciones de uso. Si no estás de acuerdo con estos términos y condiciones, por favor, no utilices este sitio.
+                Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita una página web o utiliza una aplicación. Estos archivos permiten que el sitio web o la aplicación recuerde sus acciones y preferencias durante un período de tiempo, lo que mejora su experiencia de navegación.
                 </p>
 
-                <h4 className="py-14 font-semibold text-[16px] text-green">2. Uso del Sitio Web</h4>
+                <h4 className="py-14 font-semibold text-[16px] text-green">2. ¿Cómo Utilizamos las Cookies?</h4>
                 <p className='font-extralight text-[16px]'>
-                    Te comprometes a proporcionar información precisa y completa al realizar pedidos en este sitio web, no puedes utilizar este sitio web con fines ilegales o no autorizados.
+                Utilizamos cookies para varios fines, que incluyen:
                 </p>
-                <h4 className="py-14 font-semibold text-[16px] text-green">3. Compras y Pagos</h4>
-                <p className='font-extralight text-[16px]'>
-                    Aceptamos los siguientes métodos de pago, transferencia por PSE, Efecty, los pedidos están sujetos a disponibilidad y confirmación. Nos reservamos el derecho de cancelar o rechazar cualquier pedido en cualquier momento por cualquier motivo.
-                </p>
-                <h4 className="py-14 font-semibold text-[16px] text-green">4. Envío y Entrega</h4>
-                <p className='font-extralight text-[16px]'>
-                    No nos hacemos responsables de retrasos en la entrega causados por factores fuera de nuestro control.
-                </p>
-                <h4 className="py-14 font-semibold text-[16px] text-green">5.  Propiedad Intelectual</h4>
-                <p className='font-extralight text-[16px]'>
-                    Todos los contenidos de este sitio web, incluyendo pero no limitado a textos, imágenes, logotipos y diseños, están protegidos por derechos de autor y otros derechos de propiedad intelectual.
+                <ul className='font-extralight text-[16px]'>
+                    <li>Cookies de Sesión: Estas cookies se eliminan automáticamente cuando cierra la Aplicación. Son temporales y se utilizan para almacenar información temporal, como su carrito de compras en línea.</li>
+                    <li>Rendimiento y Analíticas: Utilizamos cookies para recopilar información sobre cómo los usuarios interactúan con la Aplicación. Esto nos ayuda a mejorar la calidad y el rendimiento de nuestros servicios.</li>
+                    <li>Publicidad: Podemos utilizar cookies para mostrar anuncios personalizados y relevantes en la Aplicación y en otros sitios web y aplicaciones.</li>
+                </ul>
+                
 
-                    No puedes utilizar, reproducir o distribuir estos contenidos sin autorización previa por escrito.
+                <h4 className="py-14 font-semibold text-[16px] text-green">3. Tipo de cookies que utilizamos</h4>
+                <ul className='font-extralight text-[16px]'>
+                    <li>Funcionalidad: Las cookies son esenciales para el funcionamiento adecuado de la Aplicación. Nos permiten recordar sus preferencias y configuraciones, como el idioma y la ubicación.</li>
+                    <li>Cookies Persistentes: Estas cookies permanecen en su dispositivo después de cerrar la Aplicación. Se utilizan para recordar sus preferencias y configuraciones para futuras visitas.</li>
+                </ul>
+
+                <h4 className="py-14 font-semibold text-[16px] text-green">4. Control de Cookies</h4>
+                <p className='font-extralight text-[16px]'>
+                Puede controlar y administrar las cookies en su dispositivo a través de la configuración de su navegador o la configuración de la Aplicación. Puede optar por bloquear o eliminar cookies en cualquier momento. Sin embargo, tenga en cuenta que deshabilitar las cookies puede afectar la funcionalidad de la Aplicación y limitar su experiencia de usuario.
+                </p>
+                <h4 className="py-14 font-semibold text-[16px] text-green">5.  Cambios en la Política de Cookies</h4>
+                <p className='font-extralight text-[16px]'>
+                Nos reservamos el derecho de actualizar o modificar esta Política de Cookies en cualquier momento. Cualquier cambio significativo se comunicará a través de la Aplicación.
 
                 </p>
-                <h4 className="py-14 font-semibold text-[16px] text-green">6. Modificaciones de los Términos y Condiciones</h4>
+                <h4 className="py-14 font-semibold text-[16px] text-green">6. Preguntas y contacto</h4>
                 <p className='font-extralight text-[16px]'>
-                    Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento. Las modificaciones entrarán en vigor inmediatamente después de su publicación en este sitio web.
+                Si tiene alguna pregunta sobre nuestra Política de Cookies o desea obtener más información sobre cómo utilizamos las cookies en la Aplicación, no dude en ponerse en contacto con nosotros a través de los datos de contacto proporcionados en la Aplicación.
                 </p >
-                <h4 className="py-14 font-semibold text-[16px] text-green">7. Contacto</h4>
-                <p className='font-extralight text-[16px]'>
-                    Si tienes alguna pregunta o inquietud con respecto a estos términos y condiciones, puedes ponerte en contacto con nosotros a través de nuestro numero de WhatsApp +57 3105307440.
-
-
-                </p>
             </div>
             <Footer />
         </section>
