@@ -1,3 +1,4 @@
+import { Contact } from '@/components/contact'
 import Footer from '@/components/footer'
 import Form from '@/components/form/form'
 import Header from '@/components/header'
@@ -10,6 +11,7 @@ export default function Home() {
   <div>
     <Header/>
     <Form/>
+    <Contact/>
     <Slider/>
     <Footer/>
   </div>
