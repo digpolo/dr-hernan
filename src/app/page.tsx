@@ -1,7 +1,6 @@
 'use client'
 import React, { useEffect } from 'react'
 import Footer from '@/components/footer'
-import Form from '@/components/form/form'
 import Header from '@/components/header'
 import Slider from '@/components/slider/slider'
 import ContactForm from '@/components/ContactForm'
@@ -16,7 +15,6 @@ export default function Home() {
   <div>
     <Header/>
     <ContactForm /> 
-    <Form/>
     <Slider/>
     <Footer/>
   </div>
