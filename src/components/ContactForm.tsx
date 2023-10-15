@@ -51,19 +51,21 @@ const ContactForm: React.FC = () => {
     <div className="form-container">
       <h1>Contact Us</h1>
       <p>We're here to help if you have any questions</p>
-      <form className="form-inner" onSubmit={handleSubmit}>
+      <form className="" onSubmit={handleSubmit}>
         <div className="row">
           <input
             type="text"
             value={formDetails.firstName}
             placeholder="First Name"
             onChange={(e) => onFormUpdate("firstName", e.target.value)}
+            className={`w-full rounded-[12px] bg-grey font-medium text-[16px] pl-3 my-2 text-[#A7A7AB] py-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500`}
           />
           <input
             type="text"
             value={formDetails.lastName}
             placeholder="Last Name"
             onChange={(e) => onFormUpdate("lastName", e.target.value)}
+            className={`w-full rounded-[12px] bg-grey font-medium text-[16px] pl-3 my-2 text-[#A7A7AB] py-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500`}
           />
         </div>
         <div className="row">
@@ -72,12 +74,14 @@ const ContactForm: React.FC = () => {
             value={formDetails.email}
             placeholder="Email Address"
             onChange={(e) => onFormUpdate("email", e.target.value)}
+            className={`w-full rounded-[12px] bg-grey font-medium text-[16px] pl-3 my-2 text-[#A7A7AB] py-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500`}
           />
           <input
             type="tel"
             value={formDetails.phone}
             placeholder="Phone No."
             onChange={(e) => onFormUpdate("phone", e.target.value)}
+            className={`w-full rounded-[12px] bg-grey font-medium text-[16px] pl-3 my-2 text-[#A7A7AB] py-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500`}
           />
         </div>
         <div className="row">
@@ -86,6 +90,7 @@ const ContactForm: React.FC = () => {
             value={formDetails.message}
             placeholder="Message"
             onChange={(e) => onFormUpdate("message", e.target.value)}
+            className={`w-full rounded-[12px] bg-grey font-medium text-[16px] pl-3 my-2 text-[#A7A7AB] py-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500`}
           ></textarea>
         </div>
         <button type="submit">{buttonText}</button>
