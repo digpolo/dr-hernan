@@ -1,15 +1,20 @@
+'use client'
+import React, { useEffect } from 'react'
 import Footer from '@/components/footer'
-import Form from '@/components/form/form'
 import Header from '@/components/header'
-import NavBar from '@/components/nav-bar'
 import Slider from '@/components/slider/slider'
-import Image from 'next/image'
+import ContactForm from '@/components/ContactForm'
 
 export default function Home() {
+  useEffect(() => {
+    fetch("http://localhost:3001/api")
+      .then((res) => res.json())
+      .then((data) => {console.log(data)});
+  }, [])
   return (
   <div>
     <Header/>
-    <Form/>
+    <ContactForm /> 
     <Slider/>
     <Footer/>
   </div>
