@@ -15,7 +15,7 @@ export default function Home() {
   <div>
     <Header/>
     <ContactForm /> 
-    <Slider/>
+    <Slider />
     <Footer/>
   </div>
   )
