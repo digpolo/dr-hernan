@@ -1,6 +1,7 @@
 import React from 'react'
 import ImgSlider from './img-slider'
 import { IoIosArrowForward } from 'react-icons/io';
+import { CarouselDefault } from './carousel';
 
 const Slider = () => {
   return (
@@ -10,7 +11,7 @@ const Slider = () => {
         <p className='text-center text-blue font-[16px]'>Agenda tu cita</p>
         <IoIosArrowForward className=' w-5 h-5' />
       </a>
-      <ImgSlider />
+      <CarouselDefault/>
     </div >
 
   )
