@@ -6,8 +6,10 @@ import Slider from '@/components/slider/slider'
 import ContactForm from '@/components/ContactForm'
 
 export default function Home() {
-  useEffect(() => {
-    fetch("http://localhost:3001/api")
+   const [data, setData] = React.useState(null);
+
+  React.useEffect(() => {
+    fetch("/api")
       .then((res) => res.json())
       .then((data) => {console.log(data)});
   }, [])
@@ -15,7 +17,7 @@ export default function Home() {
   <div>
     <Header/>
     <ContactForm /> 
-    <Slider />
+    {/* <Slider /> */}
     <Footer/>
   </div>
   )

@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "dr-hernan"
-  }
+    "default": "dr-hernan",
+    "n": "dr-hernan",
+    "dr-hernan": "dr-hernan"
+  },
+  "targets": {},
+  "etags": {}
 }
