@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Odontología estética",
+  title: "Dr Hernan Jojoa",
   description: "Dr hernan Jojoa",
 };
 
