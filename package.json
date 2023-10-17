@@ -3,10 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001",
-  "engines": {
-    "npm": "10.1.0",
-    "node": "20.8.1"
-  },
+  
   "scripts": {
     "dev": "next dev",
     "build": "next build",

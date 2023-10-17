@@ -7,7 +7,11 @@ const NavBar = () => {
   return (
     <div className='flex justify-center items-center pb-8 pt-10 lg:p-2 '>
       <Link href={'/'}>
-        <Image alt='logo hernan jojoa' src={logo} width={300} height={300}/>
+        <Image 
+        alt='logo hernan jojoa' 
+        src={logo} 
+        width={300} 
+        height={300}/>
         </Link>
     </div>
   )
