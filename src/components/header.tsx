@@ -8,10 +8,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 const Header = () => {
     return (
         <section className='h-screen '>
-            
-            <NavBar />
-          
-            <div className='grid grid-cols-1 sm:grid-cols-2 sm:h-auto'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 sm:h-autoflex items-center'>
                 <div className=' col-span-1 sm:h-screen sm:h-[calc(100vh-100px)] flex justify-center items-center'>
                     <div className='p-4 sm:p-8 w-full text-center'>
                         <ul className='py-6 font-extralight text-[16px]  '>
@@ -28,8 +25,8 @@ const Header = () => {
                         </a>
                     </div>
                 </div>
-                <div className="col-span-1 sm:h-[calc(100vh-100px)]">
-                    <div className=" w-full flex flex-col flex-start justify-center  md:pt-0 lg:p-20">
+                <div className="col-span-1 sm:h-[calc(100vh-100px)] flex items-center">
+                    <div className="flex flex-col flex-start justify-center  md:pt-0 lg:p-24">
                         <Image
                             src={profile}
                             alt="Fotografia dr hernan jojoa"

@@ -18,7 +18,7 @@ export default function Home() {
     <Header/>
     <ContactForm /> 
     {/* <Slider /> */}
-    <Footer/>
+    
   </div>
   )
 }
