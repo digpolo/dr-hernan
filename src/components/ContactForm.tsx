@@ -50,8 +50,8 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col  justify-between  mx-4 mx-auto max-w-xl px-4 ">
-      <h2 className='py-10 font-semibold text-[30px] mt-28'>Cuéntanos cómo podemos ayudarte</h2>
+    <div className="flex flex-col  justify-between  mx-4 mx-auto max-w-xl px-4 sm:pt-40">
+      <h2 className=' font-semibold text-[30px] '>Cuéntanos cómo podemos ayudarte</h2>
       <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
         <div className="row">
           <label
