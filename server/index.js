@@ -8,7 +8,7 @@ require('dotenv').config()
 const PORT = process.env.PORT || 3001 //en donde se ejecuta el servidor 
 
 const app = express(); //creacion de una instancia de express
-app.use(express.static(path.resolve(__dirname, '../build')));
+app.use(express.static(path.resolve(__dirname, '../out')));
 app.use(cors())//habilita las solicitudes entre dominios
 app.use(bodyParser.json())
 
@@ -58,7 +58,7 @@ app.post('/api/contact', bodyParser.urlencoded({ extended: false }), (req, res) 
 })
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, '../out', 'index.html'));
 });
 
 app.listen(PORT, () => {
