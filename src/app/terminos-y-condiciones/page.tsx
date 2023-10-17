@@ -6,7 +6,7 @@ import Footer from '@/components/footer'
 const page = () => {
     return (
         <section>
-            <NavBar />
+     
             <NavBarPrivacy />
             <div className='mx-4'>
                 <h3 className="my-5 text-green py-14 font-semibold text-[30px]">Terminos y condiciones</h3>
@@ -54,7 +54,7 @@ const page = () => {
                     Si tienes alguna pregunta o inquietud con respecto a estos términos y condiciones, puedes ponerte en contacto con nosotros a través de nuestros canales de comunicación.
                 </p>
             </div>
-            <Footer />
+          
         </section>
     )
 }
