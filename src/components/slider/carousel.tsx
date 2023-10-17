@@ -12,9 +12,9 @@ import ImgSlider2 from "./img-slider2";
 export const CarouselDefault: React.FC = (props) => {
   return (
     <Carousel transition={{ duration: 2 }} autoplay loop>
-      <div>
+      
       <ImgSlider2/>
-      </div>
+      
       <ImgSlider/>
       <ImgSlider2/>
       <ImgSlider/>
