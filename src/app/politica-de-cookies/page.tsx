@@ -6,7 +6,7 @@ import Footer from '@/components/footer'
 const page = () => {
     return (
         <section>
-            <NavBar />
+          
             <NavBarPrivacy />
             <div className='mx-4'>
                 <h3 className="my-5 text-green py-14 font-semibold text-[30px]">Políticas de cookies</h3>
@@ -49,7 +49,7 @@ const page = () => {
                 Si tiene alguna pregunta sobre nuestra Política de Cookies o desea obtener más información sobre cómo utilizamos las cookies en la Aplicación, no dude en ponerse en contacto con nosotros a través de los datos de contacto proporcionados en la Aplicación.
                 </p >
             </div>
-            <Footer />
+ 
         </section>
     )
 }

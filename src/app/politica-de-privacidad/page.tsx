@@ -6,7 +6,7 @@ import Footer from '@/components/footer'
 const page = () => {
     return (
         <section>
-            <NavBar />
+      
             <NavBarPrivacy />
             <div className='mx-4'>
                 <h3 className="my-5 text-green py-14 font-semibold text-[30px]">Política de privacidad</h3>
@@ -48,7 +48,7 @@ const page = () => {
                 Le agradecemos su confianza en nosotros y su elección de utilizar nuestros servicios. Estamos comprometidos en mantener la privacidad y seguridad de su información personal.
                 </p>
             </div>
-            <Footer />
+    
         </section >
     )
 }
