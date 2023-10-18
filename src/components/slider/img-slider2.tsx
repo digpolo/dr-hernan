@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import case2a from '../../../public/case1a.jpg'
-import case2d from '../../../public/case1d.jpg'
-import case2p from '../../../public/case1f.jpg'
+import case2a from '../../../public/case2a.jpg'
+import case2d from '../../../public/case2d.jpg'
+import case2p from '../../../public/case2p.jpg'
 
 const ImgSlider2 = () => {
   return (
