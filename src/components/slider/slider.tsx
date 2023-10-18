@@ -1,7 +1,7 @@
 import React from 'react'
-import ImgSlider from './img-slider'
+import ImgSlider from './img-slider1'
 import { IoIosArrowForward } from 'react-icons/io';
-import { CarouselDefault } from './carousel';
+import  CarouselDefault  from './carousel-default';
 
 const Slider = () => {
   return (
