@@ -1,0 +1,416 @@
+[debug] [2023-11-13T04:38:51.247Z] ----------------------------------------------------------------------
+[debug] [2023-11-13T04:38:51.249Z] Command:       /home/diego/.nvm/versions/node/v20.8.1/bin/node /home/diego/.nvm/versions/node/v20.8.1/bin/firebase deploy
+[debug] [2023-11-13T04:38:51.249Z] CLI Version:   12.8.1
+[debug] [2023-11-13T04:38:51.250Z] Platform:      linux
+[debug] [2023-11-13T04:38:51.250Z] Node Version:  v20.8.1
+[debug] [2023-11-13T04:38:51.250Z] Time:          Sun Nov 12 2023 23:38:51 GMT-0500 (Colombia Standard Time)
+[debug] [2023-11-13T04:38:51.250Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-13T04:38:51.308Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-13T04:38:51.308Z] > authorizing via signed-in user (digpolo@gmail.com)
+[debug] [2023-11-13T04:38:51.308Z] [iam] checking project dr-hernan for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-13T04:38:51.310Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dr-hernan:testIamPermissions [none]
+[debug] [2023-11-13T04:38:51.310Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dr-hernan:testIamPermissions x-goog-quota-user=projects/dr-hernan
+[debug] [2023-11-13T04:38:51.310Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dr-hernan:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-13T04:38:52.126Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dr-hernan:testIamPermissions 200
+[debug] [2023-11-13T04:38:52.127Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dr-hernan:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-13T04:38:52.128Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dr-hernan [none]
+[debug] [2023-11-13T04:38:52.549Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dr-hernan 200
+[debug] [2023-11-13T04:38:52.550Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dr-hernan {"projectId":"dr-hernan","projectNumber":"519881324824","displayName":"dr-hernan","name":"projects/dr-hernan","resources":{"hostingSite":"dr-hernan"},"state":"ACTIVE","etag":"1_bd1677ce-d526-4d81-b3f8-98a08975bb7f"}
+[debug] [2023-11-13T04:38:54.550Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dr-hernan/sites pageToken=&pageSize=10
+[debug] [2023-11-13T04:38:55.477Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dr-hernan/sites 200
+[debug] [2023-11-13T04:38:55.477Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dr-hernan/sites {"sites":[{"name":"projects/dr-hernan/sites/dr-hernan","defaultUrl":"https://dr-hernan.web.app","appId":"1:519881324824:web:16e298e714447e657bc66d","type":"DEFAULT_SITE"}]}
+[debug] [2023-11-13T04:38:55.478Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:519881324824:web:16e298e714447e657bc66d/config [none]
+[debug] [2023-11-13T04:38:56.001Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:519881324824:web:16e298e714447e657bc66d/config 200
+[debug] [2023-11-13T04:38:56.002Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:519881324824:web:16e298e714447e657bc66d/config {"projectId":"dr-hernan","appId":"1:519881324824:web:16e298e714447e657bc66d","storageBucket":"dr-hernan.appspot.com","apiKey":"AIzaSyC7BHWxTPaf-DA2gs-smAqmR1-x97M_iCI","authDomain":"dr-hernan.firebaseapp.com","messagingSenderId":"519881324824","measurementId":"G-H6Y1XG8BEW"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/8) ...
+
+[info]    Generating static pages (2/8) 
+
+[info]    Generating static pages (4/8) 
+
+[info]    Generating static pages (6/8) 
+
+[info]  ✓ Generating static pages (8/8) 
+
+[info]    Finalizing page optimization ...
+   Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    4.36 kB        89.9 kB
+├ ○ /_not-found                          883 B          81.4 kB
+├ ○ /icon.png                            0 B                0 B
+├ ○ /politica-de-cookies                 181 B          87.6 kB
+├ ○ /politica-de-privacidad              181 B          87.6 kB
+└ ○ /terminos-y-condiciones              181 B          87.6 kB
++ First Load JS shared by all            80.5 kB
+  ├ chunks/864-a02a2dddda34086a.js       27.6 kB
+  ├ chunks/fd9d1056-be4284c6839b84b2.js  51 kB
+  ├ chunks/main-app-e81e8331bffcfac6.js  232 B
+  └ chunks/webpack-cab177a39c71341c.js   1.73 kB
+
+
+
+[info] ○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static component /_not-found
+[info] 
+[debug] [2023-11-13T04:39:23.141Z] [web frameworks] effective firebase.json:  {
+  "hosting": [
+    {
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "us-central1"
+      },
+      "site": "dr-hernan",
+      "rewrites": [
+        {
+          "source": "**",
+          "function": {
+            "functionId": "ssrdrhernan",
+            "region": "us-central1",
+            "pinTag": true
+          }
+        }
+      ],
+      "redirects": [],
+      "headers": [
+        {
+          "source": "/icon.png",
+          "headers": [
+            {
+              "key": "cache-control",
+              "value": "public, immutable, no-transform, max-age=31536000"
+            },
+            {
+              "key": "content-type",
+              "value": "image/png"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/icon.png/layout,_N_T_/icon.png/route,_N_T_/icon.png"
+            }
+          ]
+        },
+        {
+          "source": "**/*.[jt]s",
+          "headers": [
+            {
+              "key": "Set-Cookie",
+              "value": "__FIREBASE_DEFAULTS__=eyJjb25maWciOnsicHJvamVjdElkIjoiZHItaGVybmFuIiwiYXBwSWQiOiIxOjUxOTg4MTMyNDgyNDp3ZWI6MTZlMjk4ZTcxNDQ0N2U2NTdiYzY2ZCIsInN0b3JhZ2VCdWNrZXQiOiJkci1oZXJuYW4uYXBwc3BvdC5jb20iLCJhcGlLZXkiOiJBSXphU3lDN0JIV3hUUGFmLURBMmdzLXNtQXFtUjEteDk3TV9pQ0kiLCJhdXRoRG9tYWluIjoiZHItaGVybmFuLmZpcmViYXNlYXBwLmNvbSIsIm1lc3NhZ2luZ1NlbmRlcklkIjoiNTE5ODgxMzI0ODI0IiwibWVhc3VyZW1lbnRJZCI6IkctSDZZMVhHOEJFVyJ9LCJfYXV0aFRva2VuU3luY1VSTCI6Ii9fX3Nlc3Npb24ifQ; SameSite=Strict; Expires=2025-10-07T15:19:23.141Z; Path=/;"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "public": ".firebase/dr-hernan/hosting",
+      "webFramework": "next_ssr"
+    }
+  ],
+  "functions": [
+    {
+      "source": ".firebase/dr-hernan/functions",
+      "codebase": "firebase-frameworks-dr-hernan"
+    }
+  ]
+}
+[debug] [2023-11-13T04:39:23.143Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-13T04:39:23.143Z] > authorizing via signed-in user (digpolo@gmail.com)
+[debug] [2023-11-13T04:39:23.143Z] [iam] checking project dr-hernan for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2023-11-13T04:39:23.144Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dr-hernan:testIamPermissions [none]
+[debug] [2023-11-13T04:39:23.144Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dr-hernan:testIamPermissions x-goog-quota-user=projects/dr-hernan
+[debug] [2023-11-13T04:39:23.144Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dr-hernan:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-11-13T04:39:23.712Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dr-hernan:testIamPermissions 200
+[debug] [2023-11-13T04:39:23.712Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dr-hernan:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[info] 
+[info] === Deploying to 'dr-hernan'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2023-11-13T04:39:23.720Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dr-hernan [none]
+[debug] [2023-11-13T04:39:24.131Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dr-hernan 200
+[debug] [2023-11-13T04:39:24.131Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dr-hernan {"projectId":"dr-hernan","projectNumber":"519881324824","displayName":"dr-hernan","name":"projects/dr-hernan","resources":{"hostingSite":"dr-hernan"},"state":"ACTIVE","etag":"1_bd1677ce-d526-4d81-b3f8-98a08975bb7f"}
+[info] i  functions: preparing codebase firebase-frameworks-dr-hernan for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2023-11-13T04:39:24.136Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-11-13T04:39:24.136Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/dr-hernan
+[debug] [2023-11-13T04:39:24.138Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-11-13T04:39:24.139Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/dr-hernan
+[debug] [2023-11-13T04:39:24.143Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/cloudbuild.googleapis.com [none]
+[debug] [2023-11-13T04:39:24.143Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/cloudbuild.googleapis.com x-goog-quota-user=projects/dr-hernan
+[debug] [2023-11-13T04:39:24.147Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/artifactregistry.googleapis.com [none]
+[debug] [2023-11-13T04:39:24.147Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/artifactregistry.googleapis.com x-goog-quota-user=projects/dr-hernan
+[debug] [2023-11-13T04:39:24.609Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/cloudbuild.googleapis.com 200
+[debug] [2023-11-13T04:39:24.609Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/cloudbuild.googleapis.com [omitted]
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2023-11-13T04:39:24.918Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/cloudfunctions.googleapis.com 200
+[debug] [2023-11-13T04:39:24.918Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2023-11-13T04:39:24.922Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/runtimeconfig.googleapis.com 200
+[debug] [2023-11-13T04:39:24.922Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-11-13T04:39:24.960Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/artifactregistry.googleapis.com 200
+[debug] [2023-11-13T04:39:24.960Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/artifactregistry.googleapis.com [omitted]
+[info] ✔  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2023-11-13T04:39:24.961Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dr-hernan/adminSdkConfig [none]
+[debug] [2023-11-13T04:39:25.268Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dr-hernan/adminSdkConfig 200
+[debug] [2023-11-13T04:39:25.268Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dr-hernan/adminSdkConfig {"projectId":"dr-hernan","storageBucket":"dr-hernan.appspot.com"}
+[debug] [2023-11-13T04:39:25.269Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/dr-hernan/configs [none]
+[debug] [2023-11-13T04:39:25.755Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/dr-hernan/configs 200
+[debug] [2023-11-13T04:39:25.755Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/dr-hernan/configs {}
+[debug] [2023-11-13T04:39:25.757Z] Validating nodejs source
+[debug] [2023-11-13T04:39:26.465Z] > [functions] package.json contents: {
+  "name": "dr-hernan",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-tailwind/react": "^2.1.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase": "^10.5.0",
+    "flowbite": "^1.8.1",
+    "next": "13.5.4",
+    "nodemailer": "^6.9.6",
+    "path": "^0.12.7",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^4.11.0",
+    "firebase-frameworks": "^0.10.4",
+    "firebase-functions": "^4.3.0",
+    "firebase-admin": "^11.0.1"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "20"
+  }
+}
+[debug] [2023-11-13T04:39:26.465Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase firebase-frameworks-dr-hernan to determine what to deploy 
+[debug] [2023-11-13T04:39:26.468Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-13T04:39:26.476Z] Found firebase-functions binary at '/home/diego/dr-hernan/.firebase/dr-hernan/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8854
+
+[debug] [2023-11-13T04:39:26.669Z] Got response from /__/functions.yaml {"endpoints":{"ssrdrhernan":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["us-central1"],"labels":{},"httpsTrigger":{},"entryPoint":"ssrdrhernan"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: preparing .firebase/dr-hernan/functions directory for uploading... 
+[info] i  functions: packaged /home/diego/dr-hernan/.firebase/dr-hernan/functions (14.6 MB) for uploading 
+[debug] [2023-11-13T04:39:32.744Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/dr-hernan/locations/-/functions [none]
+[debug] [2023-11-13T04:39:33.391Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/dr-hernan/locations/-/functions 200
+[debug] [2023-11-13T04:39:33.392Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/dr-hernan/locations/-/functions {}
+[debug] [2023-11-13T04:39:33.393Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/dr-hernan/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2023-11-13T04:39:33.901Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/dr-hernan/locations/-/functions 200
+[debug] [2023-11-13T04:39:33.902Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/dr-hernan/locations/-/functions {"functions":[{"name":"projects/dr-hernan/locations/us-central1/functions/ssrdrhernan","buildConfig":{"build":"projects/519881324824/locations/us-central1/builds/cc2c9d80-ce1e-4d11-9e73-9aeb62c4c5df","runtime":"nodejs20","entryPoint":"ssrdrhernan","source":{"storageSource":{"bucket":"gcf-v2-sources-519881324824-us-central1","object":"ssrdrhernan/function-source.zip","generation":"1697593865790219"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"sourceProvenance":{"resolvedStorageSource":{"bucket":"gcf-v2-sources-519881324824-us-central1","object":"ssrdrhernan/function-source.zip","generation":"1697593865790219"}},"dockerRegistry":"ARTIFACT_REGISTRY"},"serviceConfig":{"service":"projects/dr-hernan/locations/us-central1/services/ssrdrhernan","timeoutSeconds":60,"environmentVariables":{"EMAIL_ADDRESS":"digpolo@gmail.com","EMAIL_PASS":"wcaj zqhb sgcf ysci","__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"dr-hernan\",\"appId\":\"1:519881324824:web:16e298e714447e657bc66d\",\"storageBucket\":\"dr-hernan.appspot.com\",\"apiKey\":\"AIzaSyC7BHWxTPaf-DA2gs-smAqmR1-x97M_iCI\",\"authDomain\":\"dr-hernan.firebaseapp.com\",\"messagingSenderId\":\"519881324824\",\"measurementId\":\"G-H6Y1XG8BEW\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"dr-hernan\",\"storageBucket\":\"dr-hernan.appspot.com\"}","GCLOUD_PROJECT":"dr-hernan","EVENTARC_CLOUD_EVENT_SOURCE":"projects/dr-hernan/locations/us-central1/services/ssrdrhernan","FUNCTION_TARGET":"ssrdrhernan"},"maxInstanceCount":100,"ingressSettings":"ALLOW_ALL","uri":"https://ssrdrhernan-yolkoufrra-uc.a.run.app","serviceAccountEmail":"519881324824-compute@developer.gserviceaccount.com","availableMemory":"256Mi","allTrafficOnLatestRevision":true,"revision":"ssrdrhernan-00021-lir","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"state":"ACTIVE","updateTime":"2023-11-13T04:23:24.344765952Z","labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-dr-hernan","firebase-functions-hash":"5aeaf28cd8f9fbaf9b0e4f9c57e50129261f6491"},"environment":"GEN_2","url":"https://us-central1-dr-hernan.cloudfunctions.net/ssrdrhernan"}]}
+[info] i  functions: ensuring required API run.googleapis.com is enabled... 
+[info] i  functions: ensuring required API eventarc.googleapis.com is enabled... 
+[info] i  functions: ensuring required API pubsub.googleapis.com is enabled... 
+[info] i  functions: ensuring required API storage.googleapis.com is enabled... 
+[debug] [2023-11-13T04:39:33.907Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/run.googleapis.com [none]
+[debug] [2023-11-13T04:39:33.907Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/run.googleapis.com x-goog-quota-user=projects/dr-hernan
+[debug] [2023-11-13T04:39:33.912Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/eventarc.googleapis.com [none]
+[debug] [2023-11-13T04:39:33.912Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/eventarc.googleapis.com x-goog-quota-user=projects/dr-hernan
+[debug] [2023-11-13T04:39:33.914Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/pubsub.googleapis.com [none]
+[debug] [2023-11-13T04:39:33.914Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/pubsub.googleapis.com x-goog-quota-user=projects/dr-hernan
+[debug] [2023-11-13T04:39:33.918Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/storage.googleapis.com [none]
+[debug] [2023-11-13T04:39:33.918Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/storage.googleapis.com x-goog-quota-user=projects/dr-hernan
+[debug] [2023-11-13T04:39:34.574Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/pubsub.googleapis.com 200
+[debug] [2023-11-13T04:39:34.575Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/pubsub.googleapis.com [omitted]
+[info] ✔  functions: required API pubsub.googleapis.com is enabled 
+[debug] [2023-11-13T04:39:34.817Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/eventarc.googleapis.com 200
+[debug] [2023-11-13T04:39:34.817Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/eventarc.googleapis.com [omitted]
+[info] ✔  functions: required API eventarc.googleapis.com is enabled 
+[debug] [2023-11-13T04:39:34.819Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/run.googleapis.com 200
+[debug] [2023-11-13T04:39:34.819Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/run.googleapis.com [omitted]
+[info] ✔  functions: required API run.googleapis.com is enabled 
+[debug] [2023-11-13T04:39:34.840Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/storage.googleapis.com 200
+[debug] [2023-11-13T04:39:34.840Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dr-hernan/services/storage.googleapis.com [omitted]
+[info] ✔  functions: required API storage.googleapis.com is enabled 
+[info] i  functions: generating the service identity for pubsub.googleapis.com... 
+[info] i  functions: generating the service identity for eventarc.googleapis.com... 
+[debug] [2023-11-13T04:39:34.842Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/519881324824/services/pubsub.googleapis.com:generateServiceIdentity [none]
+[debug] [2023-11-13T04:39:34.842Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/519881324824/services/eventarc.googleapis.com:generateServiceIdentity [none]
+[debug] [2023-11-13T04:39:35.326Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/519881324824/services/eventarc.googleapis.com:generateServiceIdentity 200
+[debug] [2023-11-13T04:39:35.326Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/519881324824/services/eventarc.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-519881324824@gcp-sa-eventarc.iam.gserviceaccount.com","uniqueId":"109654789394446919920"}}
+[debug] [2023-11-13T04:39:35.602Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/519881324824/services/pubsub.googleapis.com:generateServiceIdentity 200
+[debug] [2023-11-13T04:39:35.603Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/519881324824/services/pubsub.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-519881324824@gcp-sa-pubsub.iam.gserviceaccount.com","uniqueId":"101768944369677746831"}}
+[debug] [2023-11-13T04:39:35.605Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dr-hernan [none]
+[debug] [2023-11-13T04:39:36.152Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dr-hernan 200
+[debug] [2023-11-13T04:39:36.152Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dr-hernan {"projectId":"dr-hernan","projectNumber":"519881324824","displayName":"dr-hernan","name":"projects/dr-hernan","resources":{"hostingSite":"dr-hernan"},"state":"ACTIVE","etag":"1_bd1677ce-d526-4d81-b3f8-98a08975bb7f"}
+[debug] [2023-11-13T04:39:36.154Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dr-hernan/versions [none]
+[debug] [2023-11-13T04:39:36.155Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dr-hernan/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase","firebase-web-framework":"next_ssr"}}
+[debug] [2023-11-13T04:39:37.054Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dr-hernan/versions 200
+[debug] [2023-11-13T04:39:37.055Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dr-hernan/versions {"name":"projects/519881324824/sites/dr-hernan/versions/4354a7b39e0bc819","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase","firebase-web-framework":"next_ssr"}}
+[debug] [2023-11-13T04:39:37.057Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/dr-hernan/locations/us-central1/functions:generateUploadUrl [none]
+[debug] [2023-11-13T04:39:37.454Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/dr-hernan/locations/us-central1/functions:generateUploadUrl 200
+[debug] [2023-11-13T04:39:37.454Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/dr-hernan/locations/us-central1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/gcf-v2-uploads-519881324824-us-central1/249d3860-fd21-43d8-8456-bafd13efac31.zip?GoogleAccessId=service-519881324824@gcf-admin-robot.iam.gserviceaccount.com&Expires=1699852177&Signature=1iMSLjWKpxdyMTAAtfYFCo4Ht%2F7tI7IgC98uLwMXVr0M%2FLbJO7jHvwnoV5KOrdcpvm%2BTeuwcV2Q5H2ralttO8l8DL7tFiA8%2B03Hh5lXToY1CBfX9luZUGsEdGzlGnXZUD8LdyNMkL4l2%2BSI7uzzid0pZjnYfgEU51ppK54%2BdXSxSlIN3bjV41LxL3Vk6rjA4h9Pa6Y2qL0Cq%2B4TFqz%2BPOlKPWdjqZ3hmb5%2FwtGrwd%2F%2BDfLLwreijk9jssvFfAIVDPJVqDFJ8RmU1HCrDaL44%2F99Ymxqy%2F4IfpniwzRBBwMPCT%2FytccGTnFtZ%2B1cz2SeV0lcjVups6er27ZW6BYkzSA%3D%3D","storageSource":{"bucket":"gcf-v2-uploads-519881324824-us-central1","object":"249d3860-fd21-43d8-8456-bafd13efac31.zip"}}
+[debug] [2023-11-13T04:39:37.456Z] >>> [apiv2][query] PUT https://storage.googleapis.com/gcf-v2-uploads-519881324824-us-central1/249d3860-fd21-43d8-8456-bafd13efac31.zip GoogleAccessId=service-519881324824%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1699852177&Signature=1iMSLjWKpxdyMTAAtfYFCo4Ht%2F7tI7IgC98uLwMXVr0M%2FLbJO7jHvwnoV5KOrdcpvm%2BTeuwcV2Q5H2ralttO8l8DL7tFiA8%2B03Hh5lXToY1CBfX9luZUGsEdGzlGnXZUD8LdyNMkL4l2%2BSI7uzzid0pZjnYfgEU51ppK54%2BdXSxSlIN3bjV41LxL3Vk6rjA4h9Pa6Y2qL0Cq%2B4TFqz%2BPOlKPWdjqZ3hmb5%2FwtGrwd%2F%2BDfLLwreijk9jssvFfAIVDPJVqDFJ8RmU1HCrDaL44%2F99Ymxqy%2F4IfpniwzRBBwMPCT%2FytccGTnFtZ%2B1cz2SeV0lcjVups6er27ZW6BYkzSA%3D%3D
+[debug] [2023-11-13T04:39:37.456Z] >>> [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-519881324824-us-central1/249d3860-fd21-43d8-8456-bafd13efac31.zip [stream]
+[debug] [2023-11-13T04:39:47.914Z] <<< [apiv2][status] PUT https://storage.googleapis.com/gcf-v2-uploads-519881324824-us-central1/249d3860-fd21-43d8-8456-bafd13efac31.zip 200
+[debug] [2023-11-13T04:39:47.915Z] <<< [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-519881324824-us-central1/249d3860-fd21-43d8-8456-bafd13efac31.zip [omitted]
+[info] ✔  functions: .firebase/dr-hernan/functions folder uploaded successfully 
+[info] i  hosting[dr-hernan]: beginning deploy... 
+[info] i  hosting[dr-hernan]: found 71 files in .firebase/dr-hernan/hosting 
+[debug] [2023-11-13T04:39:47.931Z] [hosting] uploading with 200 concurrency
+[debug] [2023-11-13T04:39:47.932Z] [hosting] hash cache [LmZpcmViYXNlL2RyLWhlcm5hbi9ob3N0aW5n] not populated
+[debug] [2023-11-13T04:39:48.065Z] [hosting] hash cache [LmZpcmViYXNlL2RyLWhlcm5hbi9ob3N0aW5n] stored for 71 files
+[debug] [2023-11-13T04:39:48.065Z] [hosting][hash queue][FINAL] {"max":128,"min":12,"avg":30.971830985915492,"active":0,"complete":71,"success":71,"errored":0,"retried":0,"total":71,"elapsed":131}
+[debug] [2023-11-13T04:39:48.065Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/519881324824/sites/dr-hernan/versions/4354a7b39e0bc819:populateFiles [none]
+[debug] [2023-11-13T04:39:48.066Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/519881324824/sites/dr-hernan/versions/4354a7b39e0bc819:populateFiles {"files":{"/404.html":"f3f497ada8383006a72daf21ad0f013407a361f3d66436402829b87c68da2527","/icon.png":"f2df78a0b69747402d759acc7d3bc363edd5d744f631d83bc6fca42c6921faed","/index.html":"f13b6f013a833a8e0732579afddcfc41b3c2fdb4e5663c32e99a17b52bdace16","/next.svg":"69fb75aede79b670cc3a774cf34561364d373632c78ed59342781868b751d105","/logo.svg":"a3921afde856fc403f39b2e04cfcc3fae2d92e3829df3bc282d69752fcb9d5b0","/vercel.svg":"56529d5c05555c7bd45b85b6ad14f98f64d975e95b5c7c4f52a4b4cd812e816e","/politica-de-privacidad.html":"20e220843bfaa75dfdb4aa296dad47854f400265903912f34022342f07bae537","/terminos-y-condiciones.html":"b4f2ae2fc9510b2d54e844c16b2503d8fa93965c8d365b2bfc4c13d513a23765","/_next/static/SD8MznmB4O2RSt2hJ5Ojv/_ssgManifest.js":"d8d8790f4e673a23bec506f00699bed8a258ac0e4965bb1ca8598172cfc0ec97","/_next/static/SD8MznmB4O2RSt2hJ5Ojv/_buildManifest.js":"194052a61b2b493bec5c9d218dc965a4d5bceedaae426b1731b55091af93f023","/_next/static/chunks/12038df7-8c83115e285bff08.js":"179c130e7b51f5a4e69d12adaa882929c57ecea36743a8ec352a7e8635d2a7e3","/_next/static/chunks/964-9f705ececa9f7212.js":"d9e8cc6eee13dc28514ba0ad9016b8213f382d62ce25ec4142e5710dc60afb6b","/_next/static/chunks/724-a5ff0d0bdc7ba5eb.js":"9fb159ef50204529e94ea44f079a864ee87145eb3fd14b1ac720a39e9eb496f7","/_next/static/chunks/main-app-e81e8331bffcfac6.js":"b7836d705c90ea6319a02c306e637e5c734db755fe6f1254f48bf214a066b5de","/_next/static/chunks/webpack-cab177a39c71341c.js":"a8ed009e78c486aa47f09653d830ca1af0cd0fb5051147cc3ecf3487fc8bec56","/_next/static/chunks/app/_not-found-f9757bbc0564a3ea.js":"8befa2da91ad4407ec1474723fa71126ce487435e085e6d593110a5812f19bba","/_next/static/chunks/app/layout-5915cb37de87af6d.js":"4872b1ba084cb5dabb8befceb1ffbcaf30012472ff1268e14a0e5d98c420bdec","/_next/static/chunks/app/page-e83a87f4c69cde2b.js":"5743b11faad2f3bfb410de502733fc8a62e0fa4a22f33dad413a395b1bfef9a6","/_next/static/chunks/app/politica-de-cookies/page-2f1703a43ec2e103.js":"5c8780f1c7964eb0f4b9eeb8db753c4904de0478ed97f9987483d9a96aee256f","/_next/static/chunks/app/politica-de-privacidad/page-c68425f102770148.js":"1b0fd3f48002dac5e8846009aebad46ce0dd57f9b2cbc63f2afac1de27e3e975","/_next/static/chunks/app/terminos-y-condiciones/page-0379205a6975afa4.js":"9fb77505cfafb5c9be4021bf59e6e6ae4be3dfc0cdf40b9a22f70b561fd5061b","/_next/static/chunks/pages/_app-27277a117f49dcf1.js":"bdcff4aff6bc38a8207c498a4000fbf124041ebc8076b78de9c1c862eb8bfc45","/_next/static/chunks/pages/_error-91a5938854a6f402.js":"17dceb5f5bed5b8b01abe852afb241d0d61a6d981e721abd9a9396d546b8378b","/_next/static/media/0576f4f464c78623-s.woff2":"75c57fefaea369fa3a21c2b4009eeee7262214486eaee09a60200860e5f343af","/_next/static/media/10939feefdad71be-s.p.woff2":"5a3b1f3b45795d951e16c0d2eab86d835f79d430435eca3d98c88aeddf2c411c","/_next/static/media/25a4feaba4ca53ae-s.woff2":"eabeb626f2c30f3d47c1e3dd0905957288b2ccc94ca43c86c07877ad7c6e0b34","/politica-de-cookies.html":"a172db1c998fe3cfdc7ec9527469be834762afa9e8cb02087bc1d33aec5b3c33","/_next/static/media/591327bf3b62a611-s.p.woff2":"9488155df8c7344f3519cf9994c9816bfd4a961f21e4a776b4a6520bf7c3f791","/_next/static/media/4ac0de86ec3c076b-s.p.woff2":"30270ea2156ea87371dd506a49cda939d0790982f127a0501b284fc5464f53e8","/_next/static/media/7777133e901cd5ed-s.woff2":"24346ecc536a8832bae0a9d205bada49dbcfe30dddc55fb22d08f4e32044e9a6","/_next/static/media/8269b0aba99df900-s.p.woff2":"0336ca13d4e540b7368125b299826afb3febe1524c6f7faea649f2093b743a72","/_next/static/media/370d1cc320ec5619-s.p.woff2":"5f60b6180a556a630022b8d499c21b7e004c111cd39336537ce81c689db5a1f3","/_next/static/css/6758829be55d5428.css":"a3b962cc65167941b62f88b564573c569b6e0524340905c5f71da2a420b3be4b","/_next/static/media/916d3686010a8de2-s.woff2":"e8f42c14e2976ba0bd5881502fb881bfa8c89923a7cdda7c7709e9e5fd1f4035","/_next/static/media/953974ac5e9ff354-s.p.woff2":"e1b68c9eeaad840a728975d4e321e0ae9a0b68477f2eb135c8d82c887cb26eb2","/_next/static/media/9a881e2ac07d406b-s.woff2":"a7f83d57686b8586745231d532a5f5acf86575b371261d53641f3112e425feeb","/_next/static/media/a26e6d84d4646084-s.p.woff2":"302ef1d44ac5e13477a7effaa235b7d507c9dfec106b23a159078ffe52f7e0d1","/_next/static/media/b5492b5208029f67-s.woff2":"b55be99e63ac1a0fb1c606213bc0e9cf6c155b2ac7fab5eb4a3fef29a269051e","/_next/static/media/c04551857776278f-s.woff2":"a9e9a6f71a0a3fea42fc0c8ff2cc240effe08cf9e943719f204fac2d115f30cd","/_next/static/media/d5e464fc682cd8bc-s.p.woff2":"3bb149bafcf18c4c5bce14025520c1879ca05085d92febbb97254df11484899d","/_next/static/media/d869208648ca5469-s.woff2":"b715dff78cf0eeec39af581d69701036178d26b517f14061dc34290755e3dc8a","/_next/static/media/9c1560f572ee7773-s.woff2":"5ee5548a2e549b9fc78bbd513667bbbc11966bf2c2fcd351f672606bd0ec9343","/_next/static/media/20b8b8f6f47c1e10-s.woff2":"1db956a2dbb1ce16b51f65fa70e9c0cf3977414648edd906e81f1e769bc6fd03","/_next/static/media/26532f7f7af6b3bf-s.woff2":"835b5e254abfb3e4fd46a95872edadec567f097545d159cd8b440630769ea59f","/_next/static/media/2bca3ff0a27e486e-s.woff2":"73a7e4619b1b5159cfd2a74fcc7683d21895014524687ad6365149d8c3a55d7a","/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js":"b0d8cf9b1839da8490f94674bde697da2ac56d56e4b9d7526764a8e02552b7f5","/_next/static/media/3828f203592f7603-s.woff2":"cd47d5489cefa7f78b5a72797f658da2a46c2a787e4736ab0fecdec59ba201b0","/_next/static/chunks/864-a02a2dddda34086a.js":"3083f28b26baced289131bce2ad15bf64ce9c41378a4ed10be9fefc005a52b1e","/_next/static/chunks/main-302a87901a1b70d2.js":"d02df01905effd79a331118cb5c3974b28f3e347819c2d1893b4da31670a9508","/_next/static/media/ddd7bd64eb4cbfa0-s.woff2":"1d1b9dda89b0272e8c87ad365b8281206962eeea0ac8bddb57293a9facce86cd","/_next/static/media/f3e2c6ff694164ed-s.p.woff2":"34433f68686609af553e60bfeb0fccc0d7744508e4ddf0fbf6abb4dce7b1bab5","/_next/static/media/f93b79c1ea023ab6-s.p.woff2":"737a6e6c4725283bf5105f61739cfab19e0241404e42230cc7506de6dd28e77b","/_next/static/media/logo.5e8c398f.svg":"a3921afde856fc403f39b2e04cfcc3fae2d92e3829df3bc282d69752fcb9d5b0","/profile.jpeg":"9fe9ce8f796fde241738e1b4fb21b9d453335939395b5e32d034157411394359","/_next/static/media/839135d04a097cea-s.woff2":"700491bb71cd47e7692213bd49f50a4abfdcd78c6d1d231465e90f8e5b7801a0","/_next/static/media/87c72f23c47212b9-s.woff2":"ed4d9ace646af2ff1eb4c6bdd60d7e8c5306b917bd4aa6c21ae290c05f61da1c","/_next/static/media/bfd61103028f3673-s.woff2":"41265b2a18a1fbbf12e1a28d8646331ba10067196dba83152c9635b53b927eba","/_next/static/media/9d47503f7b30ab41-s.woff2":"1eaae639c9059c752e82db645fda70ee9c7b261b2825c9191e998b3717898dc3","/_next/static/chunks/framework-8883d1e9be70c3da.js":"1ac2eaaef2e6106976d1da60bbb709ffb5a138a0fac7881d28356f79f0aedc51","/_next/static/media/e025c64520263018-s.woff2":"4bd0ec8d558f677a0e54ee426d2e46a95afe956f1a97a557048dd79d050da44b","/_next/static/media/e8b4f344df4a68fa-s.woff2":"8be740fd86321c0071ee566f69c0636228804f769c1dff3847e2d8dc65504361","/_next/static/chunks/fd9d1056-be4284c6839b84b2.js":"f4e653b88c9cc5ac3a3cd69ea97b931d97e6185619386a2724b4a9227bf2fd8f","/_next/static/media/profile.095fdc80.jpeg":"9fe9ce8f796fde241738e1b4fb21b9d453335939395b5e32d034157411394359","/case2a.jpg":"468703e7b0dd166ab0f3513800b67ae9b02f6065f9e07e9148b27826e054a4e4","/logo-brasil.svg":"25d1347a580392c2fd105f2e63b37417295f0c1ea5f437cef5c77e1a267c40c7","/_next/static/media/logo-brasil.86dff223.svg":"25d1347a580392c2fd105f2e63b37417295f0c1ea5f437cef5c77e1a267c40c7","/case1d.jpg":"a22ec8cd78ef8bbfd40f684432ef08849c31d41e49a9850fc5615e41c69ded8e","/case1a.jpg":"5bd78a3f3c6d308c7ea88bb653e81b750ab20bfc59c4acb18a7a43f638a82a3d","/case2d.jpg":"871d1c21064bb8505622412cf5878fbc6b8e06fbfccba7836159661cfd09bfe1","/case1f.jpg":"5b9f16afdde3d9b68096fa426e4d1e2806c38748541ebcf77c920ac192211772","/case2p.jpg":"ec5549be54a63f892e84e8bcef03ff5725fbc360c9cd798130460eac00dd1959"}}
+[debug] [2023-11-13T04:39:48.869Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/519881324824/sites/dr-hernan/versions/4354a7b39e0bc819:populateFiles 200
+[debug] [2023-11-13T04:39:48.870Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/519881324824/sites/dr-hernan/versions/4354a7b39e0bc819:populateFiles {"uploadRequiredHashes":["f13b6f013a833a8e0732579afddcfc41b3c2fdb4e5663c32e99a17b52bdace16","f3f497ada8383006a72daf21ad0f013407a361f3d66436402829b87c68da2527","b4f2ae2fc9510b2d54e844c16b2503d8fa93965c8d365b2bfc4c13d513a23765","a172db1c998fe3cfdc7ec9527469be834762afa9e8cb02087bc1d33aec5b3c33","20e220843bfaa75dfdb4aa296dad47854f400265903912f34022342f07bae537"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files"}
+[debug] [2023-11-13T04:39:48.873Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/f13b6f013a833a8e0732579afddcfc41b3c2fdb4e5663c32e99a17b52bdace16 [none]
+[debug] [2023-11-13T04:39:48.874Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/f13b6f013a833a8e0732579afddcfc41b3c2fdb4e5663c32e99a17b52bdace16 [stream]
+[debug] [2023-11-13T04:39:48.876Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/f3f497ada8383006a72daf21ad0f013407a361f3d66436402829b87c68da2527 [none]
+[debug] [2023-11-13T04:39:48.876Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/f3f497ada8383006a72daf21ad0f013407a361f3d66436402829b87c68da2527 [stream]
+[debug] [2023-11-13T04:39:48.878Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/b4f2ae2fc9510b2d54e844c16b2503d8fa93965c8d365b2bfc4c13d513a23765 [none]
+[debug] [2023-11-13T04:39:48.878Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/b4f2ae2fc9510b2d54e844c16b2503d8fa93965c8d365b2bfc4c13d513a23765 [stream]
+[debug] [2023-11-13T04:39:48.879Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/a172db1c998fe3cfdc7ec9527469be834762afa9e8cb02087bc1d33aec5b3c33 [none]
+[debug] [2023-11-13T04:39:48.880Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/a172db1c998fe3cfdc7ec9527469be834762afa9e8cb02087bc1d33aec5b3c33 [stream]
+[debug] [2023-11-13T04:39:48.881Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/20e220843bfaa75dfdb4aa296dad47854f400265903912f34022342f07bae537 [none]
+[debug] [2023-11-13T04:39:48.881Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/20e220843bfaa75dfdb4aa296dad47854f400265903912f34022342f07bae537 [stream]
+[debug] [2023-11-13T04:39:48.882Z] [hosting][populate queue][FINAL] {"max":809,"min":809,"avg":809,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":818}
+[debug] [2023-11-13T04:39:48.883Z] [hosting] uploads queued: 5
+[debug] [2023-11-13T04:39:49.741Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/a172db1c998fe3cfdc7ec9527469be834762afa9e8cb02087bc1d33aec5b3c33 200
+[debug] [2023-11-13T04:39:49.742Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/a172db1c998fe3cfdc7ec9527469be834762afa9e8cb02087bc1d33aec5b3c33 [stream]
+[debug] [2023-11-13T04:39:49.754Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/f13b6f013a833a8e0732579afddcfc41b3c2fdb4e5663c32e99a17b52bdace16 200
+[debug] [2023-11-13T04:39:49.754Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/f13b6f013a833a8e0732579afddcfc41b3c2fdb4e5663c32e99a17b52bdace16 [stream]
+[debug] [2023-11-13T04:39:49.773Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/b4f2ae2fc9510b2d54e844c16b2503d8fa93965c8d365b2bfc4c13d513a23765 200
+[debug] [2023-11-13T04:39:49.773Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/b4f2ae2fc9510b2d54e844c16b2503d8fa93965c8d365b2bfc4c13d513a23765 [stream]
+[debug] [2023-11-13T04:39:49.856Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/20e220843bfaa75dfdb4aa296dad47854f400265903912f34022342f07bae537 200
+[debug] [2023-11-13T04:39:49.856Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/20e220843bfaa75dfdb4aa296dad47854f400265903912f34022342f07bae537 [stream]
+[debug] [2023-11-13T04:39:50.140Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/f3f497ada8383006a72daf21ad0f013407a361f3d66436402829b87c68da2527 200
+[debug] [2023-11-13T04:39:50.141Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dr-hernan/versions/4354a7b39e0bc819/files/f3f497ada8383006a72daf21ad0f013407a361f3d66436402829b87c68da2527 [stream]
+[debug] [2023-11-13T04:39:50.141Z] [hosting][upload queue][FINAL] {"max":1269,"min":869,"avg":981.4,"active":0,"complete":5,"success":5,"errored":0,"retried":0,"total":5,"elapsed":1271}
+[info] ✔  hosting[dr-hernan]: file upload complete 
+[debug] [2023-11-13T04:39:50.144Z] [hosting] deploy completed after 2226ms
+[info] i  functions: updating Node.js 20 (2nd Gen) function firebase-frameworks-dr-hernan:ssrdrhernan(us-central1)... 
+[debug] [2023-11-13T04:39:50.150Z] >>> [apiv2][query] PATCH https://cloudfunctions.googleapis.com/v2/projects/dr-hernan/locations/us-central1/functions/ssrdrhernan updateMask=name%2CbuildConfig.runtime%2CbuildConfig.entryPoint%2CbuildConfig.source.storageSource.bucket%2CbuildConfig.source.storageSource.object%2CbuildConfig.environmentVariables%2CbuildConfig.sourceToken%2CserviceConfig.environmentVariables%2CserviceConfig.ingressSettings%2CserviceConfig.timeoutSeconds%2CserviceConfig.serviceAccountEmail%2CserviceConfig.availableMemory%2CserviceConfig.minInstanceCount%2CserviceConfig.maxInstanceCount%2CserviceConfig.maxInstanceRequestConcurrency%2CserviceConfig.availableCpu%2CserviceConfig.vpcConnector%2CserviceConfig.vpcConnectorEgressSettings%2Clabels%2CbuildConfig.buildEnvironmentVariables
+[debug] [2023-11-13T04:39:50.151Z] >>> [apiv2][body] PATCH https://cloudfunctions.googleapis.com/v2/projects/dr-hernan/locations/us-central1/functions/ssrdrhernan {"name":"projects/dr-hernan/locations/us-central1/functions/ssrdrhernan","buildConfig":{"runtime":"nodejs20","entryPoint":"ssrdrhernan","source":{"storageSource":{"bucket":"gcf-v2-uploads-519881324824-us-central1","object":"249d3860-fd21-43d8-8456-bafd13efac31.zip"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}},"serviceConfig":{"environmentVariables":{"EMAIL_ADDRESS":"digpolo@gmail.com","EMAIL_PASS":"wcaj zqhb sgcf ysci","__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"dr-hernan\",\"appId\":\"1:519881324824:web:16e298e714447e657bc66d\",\"storageBucket\":\"dr-hernan.appspot.com\",\"apiKey\":\"AIzaSyC7BHWxTPaf-DA2gs-smAqmR1-x97M_iCI\",\"authDomain\":\"dr-hernan.firebaseapp.com\",\"messagingSenderId\":\"519881324824\",\"measurementId\":\"G-H6Y1XG8BEW\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"dr-hernan\",\"storageBucket\":\"dr-hernan.appspot.com\"}","GCLOUD_PROJECT":"dr-hernan","FIRESTORE_PREFER_REST":"true","EVENTARC_CLOUD_EVENT_SOURCE":"projects/dr-hernan/locations/us-central1/services/ssrdrhernan","FUNCTION_TARGET":"ssrdrhernan"},"ingressSettings":null,"timeoutSeconds":null,"serviceAccountEmail":null,"availableMemory":"256Mi","minInstanceCount":null,"maxInstanceCount":null,"maxInstanceRequestConcurrency":80,"availableCpu":"1","vpcConnector":null,"vpcConnectorEgressSettings":null},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-dr-hernan","firebase-functions-hash":"67e95e3af51efe6b3b142ba75968385174387d07"}}
+[debug] [2023-11-13T04:39:51.258Z] <<< [apiv2][status] PATCH https://cloudfunctions.googleapis.com/v2/projects/dr-hernan/locations/us-central1/functions/ssrdrhernan 400
+[debug] [2023-11-13T04:39:51.258Z] <<< [apiv2][body] PATCH https://cloudfunctions.googleapis.com/v2/projects/dr-hernan/locations/us-central1/functions/ssrdrhernan {"error":{"code":400,"message":"Could not update Cloud Run service projects/dr-hernan/locations/us-central1/services/ssrdrhernan. spec.template.spec.containers.resources.limits.cpu: Invalid value specified for cpu. For the specified value, maxScale may not exceed 10.\nConsider running your workload in a region with greater capacity, decreasing your requested cpu-per-instance, or requesting an increase in quota for this region if you are seeing sustained usage near this limit, see https://cloud.google.com/run/quotas. Your project may gain access to further scaling by adding billing information to your account.","status":"INVALID_ARGUMENT"}}
+[warn] ⚠  functions: Your current project quotas don't allow for the current max instances setting of 100. Either reduce this function's maximum instances, or request a quota increase on the underlying Cloud Run service at https://cloud.google.com/run/quotas. 
+[warn] ⚠  functions: You can adjust the max instances value in your function's runtime options:
+	setGlobalOptions({maxInstances: 10}) 
+[error] Failed to update function projects/dr-hernan/locations/us-central1/functions/ssrdrhernan
+[debug] [2023-11-13T04:39:51.262Z] Total Function Deployment time: 1115
+[debug] [2023-11-13T04:39:51.262Z] 1 Functions Deployed
+[debug] [2023-11-13T04:39:51.262Z] 1 Functions Errored
+[debug] [2023-11-13T04:39:51.262Z] 0 Function Deployments Aborted
+[debug] [2023-11-13T04:39:51.262Z] Average Function Deployment time: 1114
+[info] 
+[info] Functions deploy had errors with the following functions:
+	firebase-frameworks-dr-hernan:ssrdrhernan(us-central1)
+[debug] [2023-11-13T04:39:51.265Z] Not printing URL for HTTPS function. Typically this means it didn't match a filter or we failed deployment
+[info] i  functions: cleaning up build files... 
+[debug] [2023-11-13T04:39:51.267Z] >>> [apiv2][query] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/dr-hernan/locations/us-central1/repositories/gcf-artifacts/packages/ssrdrhernan [none]
+[debug] [2023-11-13T04:39:51.268Z] >>> [apiv2][query] GET https://us.gcr.io/v2/dr-hernan/gcf/us-central1/tags/list [none]
+[debug] [2023-11-13T04:39:51.758Z] <<< [apiv2][status] GET https://us.gcr.io/v2/dr-hernan/gcf/us-central1/tags/list 200
+[debug] [2023-11-13T04:39:51.758Z] <<< [apiv2][body] GET https://us.gcr.io/v2/dr-hernan/gcf/us-central1/tags/list {"child":[],"manifest":{},"name":"dr-hernan/gcf/us-central1","tags":[]}
+[debug] [2023-11-13T04:39:51.758Z] Could not find image for function projects/dr-hernan/locations/us-central1/functions/ssrdrhernan
+[debug] [2023-11-13T04:39:51.865Z] <<< [apiv2][status] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/dr-hernan/locations/us-central1/repositories/gcf-artifacts/packages/ssrdrhernan 404
+[debug] [2023-11-13T04:39:51.865Z] <<< [apiv2][body] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/dr-hernan/locations/us-central1/repositories/gcf-artifacts/packages/ssrdrhernan {"error":{"code":404,"message":"Package \"projects/dr-hernan/locations/us-central1/repositories/gcf-artifacts/packages/ssrdrhernan\" was not found.","status":"NOT_FOUND"}}
+[debug] [2023-11-13T04:39:51.866Z] Functions deploy failed.
+[debug] [2023-11-13T04:39:51.866Z] {
+  "endpoint": {
+    "id": "ssrdrhernan",
+    "project": "dr-hernan",
+    "region": "us-central1",
+    "entryPoint": "ssrdrhernan",
+    "platform": "gcfv2",
+    "runtime": "nodejs20",
+    "httpsTrigger": {},
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    },
+    "ingressSettings": null,
+    "availableMemoryMb": null,
+    "serviceAccount": null,
+    "timeoutSeconds": null,
+    "maxInstances": null,
+    "minInstances": null,
+    "concurrency": 80,
+    "vpc": null,
+    "environmentVariables": {
+      "EMAIL_ADDRESS": "digpolo@gmail.com",
+      "EMAIL_PASS": "wcaj zqhb sgcf ysci",
+      "__FIREBASE_FRAMEWORKS_ENTRY__": "next.js",
+      "__FIREBASE_DEFAULTS__": "{\"config\":{\"projectId\":\"dr-hernan\",\"appId\":\"1:519881324824:web:16e298e714447e657bc66d\",\"storageBucket\":\"dr-hernan.appspot.com\",\"apiKey\":\"AIzaSyC7BHWxTPaf-DA2gs-smAqmR1-x97M_iCI\",\"authDomain\":\"dr-hernan.firebaseapp.com\",\"messagingSenderId\":\"519881324824\",\"measurementId\":\"G-H6Y1XG8BEW\"},\"_authTokenSyncURL\":\"/__session\"}",
+      "FIREBASE_CONFIG": "{\"projectId\":\"dr-hernan\",\"storageBucket\":\"dr-hernan.appspot.com\"}",
+      "GCLOUD_PROJECT": "dr-hernan",
+      "FIRESTORE_PREFER_REST": "true",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/dr-hernan/locations/us-central1/services/ssrdrhernan"
+    },
+    "codebase": "firebase-frameworks-dr-hernan",
+    "cpu": 1,
+    "securityLevel": "SECURE_ALWAYS",
+    "targetedByOnly": false,
+    "hash": "67e95e3af51efe6b3b142ba75968385174387d07"
+  },
+  "op": "update",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "context": {
+      "function": "projects/dr-hernan/locations/us-central1/functions/ssrdrhernan"
+    },
+    "exit": 1,
+    "message": "Failed to update function projects/dr-hernan/locations/us-central1/functions/ssrdrhernan",
+    "original": {
+      "name": "FirebaseError",
+      "children": [],
+      "context": {
+        "body": {
+          "error": {
+            "code": 400,
+            "message": "Could not update Cloud Run service projects/dr-hernan/locations/us-central1/services/ssrdrhernan. spec.template.spec.containers.resources.limits.cpu: Invalid value specified for cpu. For the specified value, maxScale may not exceed 10.\nConsider running your workload in a region with greater capacity, decreasing your requested cpu-per-instance, or requesting an increase in quota for this region if you are seeing sustained usage near this limit, see https://cloud.google.com/run/quotas. Your project may gain access to further scaling by adding billing information to your account.",
+            "status": "INVALID_ARGUMENT"
+          }
+        },
+        "response": {
+          "statusCode": 400
+        }
+      },
+      "exit": 1,
+      "message": "HTTP Error: 400, Could not update Cloud Run service projects/dr-hernan/locations/us-central1/services/ssrdrhernan. spec.template.spec.containers.resources.limits.cpu: Invalid value specified for cpu. For the specified value, maxScale may not exceed 10.\nConsider running your workload in a region with greater capacity, decreasing your requested cpu-per-instance, or requesting an increase in quota for this region if you are seeing sustained usage near this limit, see https://cloud.google.com/run/quotas. Your project may gain access to further scaling by adding billing information to your account.",
+      "status": 400
+    },
+    "status": 400,
+    "code": 400
+  }
+}
+[debug] [2023-11-13T04:39:51.867Z] Error: Failed to update function ssrdrhernan in region us-central1
+    at /home/diego/.nvm/versions/node/v20.8.1/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:392:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Fabricator.updateV2Function (/home/diego/.nvm/versions/node/v20.8.1/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:383:32)
+    at async Fabricator.updateEndpoint (/home/diego/.nvm/versions/node/v20.8.1/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:154:13)
+    at async handle (/home/diego/.nvm/versions/node/v20.8.1/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:88:17)
+[error] 
+[error] Error: There was an error deploying functions
