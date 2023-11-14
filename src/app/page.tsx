@@ -16,7 +16,7 @@ export default function Home() {
   return (
   <div>
     <Header/>
-    {/* <ContactForm />  */}
+    <ContactForm /> 
     <Slider />
     
   </div>
