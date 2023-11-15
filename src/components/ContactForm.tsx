@@ -89,6 +89,21 @@ const ContactForm: React.FC = () => {
             htmlFor={"name"}
             className={`block text-sm font-light  text-white`}
           >
+            Correo electrónico
+          </label>
+          <input
+            type="email"
+            value={formDetails.phone}
+            placeholder="Correo electrónico"
+            onChange={(e) => onFormUpdate("email", e.target.value)}
+            className={`w-full rounded-xl border-none  bg-gray-900 font-medium text-[16px] pl-3 my-2  py-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500`}
+          />
+        </div>
+        <div className="row">
+          <label
+            htmlFor={"name"}
+            className={`block text-sm font-light  text-white`}
+          >
             Motivo de consulta
           </label>
           <textarea
