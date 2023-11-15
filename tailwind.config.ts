@@ -15,7 +15,7 @@ module.exports = withMT({
     extend: {
       colors: {
         blue: '#1484f6',
-        grey: '#181818',
+        gris: '#181818',
         white: 'ffffff'
     },
   },

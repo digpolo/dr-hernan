@@ -7,7 +7,7 @@ import React from 'react'
 
 const Page = () => {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 mx-auto max-w-7xl'>
+        <div className='grid grid-cols-1 md:grid-cols-2 mx-auto max-w-7xl bg-black text-white'>
          <ContactForm/>
          <Location/>
         </div>

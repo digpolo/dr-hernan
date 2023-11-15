@@ -5,13 +5,12 @@ import logo from '../../public/logo.svg'
 
 const Footer = () => {
     return (
-        <section className='bg-grey p-6 mt-32'>
+        <section className='bg-black p-6 pt-20'>
             <div className='mx-auto grid grid-cols-1 md:grid-cols-4 max-w-5xl gap-10'>
                 <div className='flex flex-col mt-10'>
                     <a href="/" >
                         <Image alt='logo hernan jojoa' src={logo} width={300} height={300} />
                     </a>
-
                 </div>
                 <div>
                     <h2 className='text-white py-3 font-semibold text-[16px]'>Atención</h2>
