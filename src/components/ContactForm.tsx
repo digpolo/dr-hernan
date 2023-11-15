@@ -32,7 +32,7 @@ const ContactForm: React.FC = () => {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setButtonText("Enviando datos...");
-    let response = await fetch("http://localhost:5000/serverapi-92b0d/us-central1/app/api/contact", {
+    let response = await fetch("https://us-central1-serverapi-92b0d.cloudfunctions.net/app/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
