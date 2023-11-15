@@ -32,7 +32,7 @@ const ContactForm: React.FC = () => {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setButtonText("Enviando datos...");
-    let response = await fetch("http://localhost:3001/api/contact", {
+    let response = await fetch("http://localhost:5000/serverapi-92b0d/us-central1/app/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -126,7 +126,7 @@ const ContactForm: React.FC = () => {
           />
           <label>Me gustaria registrarme con mi número de celular para recibir el boletín  de Dr. Hernan Jojoa con actualizaciones, recursos valiosos y consejos útiles.</label>
         </div>
-        <button className="bg-grey py-4 rounded-lg my-5 font-medium text-lg  py-10" type="submit">{buttonText}</button>
+        <button className="bg-blue-700 py-4 rounded-lg my-5 font-medium text-lg  py-10" type="submit">{buttonText}</button>
         {status.message && (
           <div className="row text-center text-blue">
             <p className={status.success === false ? "danger" : "success"}>

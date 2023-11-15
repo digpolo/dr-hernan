@@ -1,0 +1,111 @@
+[debug] [2023-11-15T21:19:03.207Z] ----------------------------------------------------------------------
+[debug] [2023-11-15T21:19:03.210Z] Command:       /home/diego/.nvm/versions/node/v20.8.1/bin/node /home/diego/.nvm/versions/node/v20.8.1/bin/firebase serve
+[debug] [2023-11-15T21:19:03.210Z] CLI Version:   12.8.1
+[debug] [2023-11-15T21:19:03.211Z] Platform:      linux
+[debug] [2023-11-15T21:19:03.211Z] Node Version:  v20.8.1
+[debug] [2023-11-15T21:19:03.211Z] Time:          Wed Nov 15 2023 16:19:03 GMT-0500 (Colombia Standard Time)
+[debug] [2023-11-15T21:19:03.212Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-15T21:19:03.285Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-15T21:19:03.286Z] > authorizing via signed-in user (diegopolodev@gmail.com)
+[debug] [2023-11-15T21:19:03.286Z] [iam] checking project serverapi-92b0d for permissions ["firebase.projects.get"]
+[debug] [2023-11-15T21:19:03.288Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/serverapi-92b0d:testIamPermissions [none]
+[debug] [2023-11-15T21:19:03.289Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/serverapi-92b0d:testIamPermissions x-goog-quota-user=projects/serverapi-92b0d
+[debug] [2023-11-15T21:19:03.289Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/serverapi-92b0d:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-11-15T21:19:04.081Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/serverapi-92b0d:testIamPermissions 200
+[debug] [2023-11-15T21:19:04.082Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/serverapi-92b0d:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-11-15T21:19:04.083Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/serverapi-92b0d [none]
+[debug] [2023-11-15T21:19:04.548Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/serverapi-92b0d 200
+[debug] [2023-11-15T21:19:04.548Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/serverapi-92b0d {"projectId":"serverapi-92b0d","projectNumber":"428444082385","displayName":"serverapi","name":"projects/serverapi-92b0d","resources":{"hostingSite":"serverapi-92b0d"},"state":"ACTIVE","etag":"1_a92a47b2-7bc0-413c-a034-7d81337c7768"}
+[info] 
+[info] === Serving from '/home/diego/dr-hernan'...
+[info] 
+[debug] [2023-11-15T21:19:04.552Z] defaultcredentials: writing to file /home/diego/.config/firebase/diegopolodev_gmail_com_application_default_credentials.json
+[debug] [2023-11-15T21:19:04.561Z] Setting GAC to /home/diego/.config/firebase/diegopolodev_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/diego/.config/firebase/diegopolodev_gmail_com_application_default_credentials.json"}}
+[debug] [2023-11-15T21:19:04.562Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/serverapi-92b0d/adminSdkConfig [none]
+[debug] [2023-11-15T21:19:04.895Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/serverapi-92b0d/adminSdkConfig 200
+[debug] [2023-11-15T21:19:04.895Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/serverapi-92b0d/adminSdkConfig {"projectId":"serverapi-92b0d","storageBucket":"serverapi-92b0d.appspot.com"}
+[info] i  functions: Watching "/home/diego/dr-hernan/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/diego/dr-hernan/functions\" for Cloud Functions..."}}
+[debug] [2023-11-15T21:19:04.935Z] Validating nodejs source
+[debug] [2023-11-15T21:19:05.881Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-15T21:19:05.882Z] Building nodejs source
+[debug] [2023-11-15T21:19:05.882Z] Failed to find version of module node: reached end of search path /home/diego/dr-hernan/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-11-15T21:19:05.888Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-15T21:19:05.895Z] Found firebase-functions binary at '/home/diego/dr-hernan/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8190
+
+[debug] [2023-11-15T21:19:06.226Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] Ready to send
+
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[info] ✔  functions[us-central1-app]: http function initialized (http://localhost:5000/serverapi-92b0d/us-central1/app). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5000/serverapi-92b0d/us-central1/app)."}}
+[debug] [2023-11-15T21:20:24.528Z] [work-queue] {"queuedWork":["/serverapi-92b0d/us-central1/app/api/contact-2023-11-15T21:20:24.528Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-15T21:20:24.529Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/serverapi-92b0d/us-central1/app/api/contact-2023-11-15T21:20:24.528Z"],"workRunningCount":1}
+[debug] [2023-11-15T21:20:24.530Z] Accepted request OPTIONS /serverapi-92b0d/us-central1/app/api/contact --> us-central1-app
+[debug] [2023-11-15T21:20:24.530Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-15T21:20:24.531Z] [functions] Got req.url=/serverapi-92b0d/us-central1/app/api/contact, mapping to path=/api/contact {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/serverapi-92b0d/us-central1/app/api/contact, mapping to path=/api/contact"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-11-15T21:20:24.539Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2023-11-15T21:20:24.546Z] [worker-pool] Adding worker with key us-central1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=1"}}
+[debug] [2023-11-15T21:20:25.362Z] [runtime-status] [33336] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"/home/diego/dr-hernan/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [33336] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"/home/diego/dr-hernan/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-11-15T21:20:25.363Z] [runtime-status] [33336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"/home/diego/dr-hernan/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [33336] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"/home/diego/dr-hernan/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-11-15T21:20:25.363Z] [runtime-status] [33336] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [33336] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-11-15T21:20:25.364Z] [runtime-status] [33336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"/home/diego/dr-hernan/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [33336] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"/home/diego/dr-hernan/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-11-15T21:20:25.515Z] [runtime-status] [33336] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [33336] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-11-15T21:20:25.515Z] [runtime-status] [33336] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.5.0","resolution":"/home/diego/dr-hernan/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [33336] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"/home/diego/dr-hernan/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-11-15T21:20:25.515Z] [runtime-status] [33336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"/home/diego/dr-hernan/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [33336] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"/home/diego/dr-hernan/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-11-15T21:20:25.516Z] [runtime-status] [33336] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.0","resolution":"/home/diego/dr-hernan/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [33336] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"/home/diego/dr-hernan/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-11-15T21:20:25.517Z] [runtime-status] [33336] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.5.0","resolution":"/home/diego/dr-hernan/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [33336] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.5.0\",\"resolution\":\"/home/diego/dr-hernan/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-11-15T21:20:25.517Z] [runtime-status] [33336] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.0","resolution":"/home/diego/dr-hernan/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [33336] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.0\",\"resolution\":\"/home/diego/dr-hernan/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-11-15T21:20:25.615Z] [runtime-status] [33336] Functions runtime initialized. {"cwd":"/home/diego/dr-hernan/functions","node_version":"20.8.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [33336] Functions runtime initialized. {\"cwd\":\"/home/diego/dr-hernan/functions\",\"node_version\":\"20.8.1\"}"}}
+[debug] [2023-11-15T21:20:25.616Z] [runtime-status] [33336] Listening to port: /tmp/fire_emu_da796d8202839ffb.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [33336] Listening to port: /tmp/fire_emu_da796d8202839ffb.sock"}}
+[debug] [2023-11-15T21:20:25.665Z] [worker-us-central1-app-60bc28cd-f96e-4072-85f0-3a7d8ff6d4dc]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-60bc28cd-f96e-4072-85f0-3a7d8ff6d4dc]: IDLE"}}
+[debug] [2023-11-15T21:20:25.666Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-11-15T21:20:25.667Z] [worker-us-central1-app-60bc28cd-f96e-4072-85f0-3a7d8ff6d4dc]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-60bc28cd-f96e-4072-85f0-3a7d8ff6d4dc]: BUSY"}}
+[debug] [2023-11-15T21:20:25.672Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 6.061261ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 6.061261ms"}}
+[debug] [2023-11-15T21:20:25.673Z] [worker-us-central1-app-60bc28cd-f96e-4072-85f0-3a7d8ff6d4dc]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-60bc28cd-f96e-4072-85f0-3a7d8ff6d4dc]: IDLE"}}
+[debug] [2023-11-15T21:20:25.673Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-15T21:20:25.673Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-15T21:20:25.673Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-15T21:20:25.677Z] [work-queue] {"queuedWork":["/serverapi-92b0d/us-central1/app/api/contact-2023-11-15T21:20:25.677Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-11-15T21:20:25.677Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/serverapi-92b0d/us-central1/app/api/contact-2023-11-15T21:20:25.677Z"],"workRunningCount":1}
+[debug] [2023-11-15T21:20:25.677Z] Accepted request POST /serverapi-92b0d/us-central1/app/api/contact --> us-central1-app
+[debug] [2023-11-15T21:20:25.678Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-11-15T21:20:25.678Z] [functions] Got req.url=/serverapi-92b0d/us-central1/app/api/contact, mapping to path=/api/contact {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/serverapi-92b0d/us-central1/app/api/contact, mapping to path=/api/contact"}}
+[debug] [2023-11-15T21:20:25.678Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-11-15T21:20:25.678Z] [worker-us-central1-app-60bc28cd-f96e-4072-85f0-3a7d8ff6d4dc]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-60bc28cd-f96e-4072-85f0-3a7d8ff6d4dc]: BUSY"}}
+[info] >  Ready to send {"user":"Ready to send","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m Ready to send"}}
+[debug] [2023-11-15T21:20:27.073Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 1395.433148ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 1395.433148ms"}}
+[debug] [2023-11-15T21:20:27.074Z] [worker-us-central1-app-60bc28cd-f96e-4072-85f0-3a7d8ff6d4dc]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-60bc28cd-f96e-4072-85f0-3a7d8ff6d4dc]: IDLE"}}
+[debug] [2023-11-15T21:20:27.074Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-11-15T21:20:27.074Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-11-15T21:20:27.074Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
