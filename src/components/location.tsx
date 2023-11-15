@@ -14,7 +14,7 @@ const Location = () => {
         <p>Puerto Caicedo, Putumayo</p>
       </div>
       <div className='py-6 mx-4'>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.58182324140594!2d-75.67072258030458!3d4.538250647761968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f5abaed36bb3%3A0xf168da84500f9c9f!2sCl.%2012%20%2317-35%2C%20Armenia%2C%20Quind%C3%ADo!5e0!3m2!1ses-419!2sco!4v1700070852136!5m2!1ses-419!2sco" width="600" height="450"  loading="lazy" ></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.58182324140594!2d-75.67072258030458!3d4.538250647761968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f5abaed36bb3%3A0xf168da84500f9c9f!2sCl.%2012%20%2317-35%2C%20Armenia%2C%20Quind%C3%ADo!5e0!3m2!1ses-419!2sco!4v1700070852136!5m2!1ses-419!2sco" width="100%" height="450"  loading="lazy" ></iframe>
         <p>Cl. 12 #17-35, Centro</p>
         <p>Armenia, Quindio</p>
       </div>
