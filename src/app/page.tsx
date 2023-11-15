@@ -3,22 +3,19 @@ import React, { useEffect } from 'react'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 import Slider from '@/components/slider/slider'
-import ContactForm from '@/components/ContactForm'
 
 export default function Home() {
-   const [data, setData] = React.useState(null);
+  const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
     fetch("/api")
       .then((res) => res.json())
-      .then((data) => {console.log(data)});
+      .then((data) => { console.log(data) });
   }, [])
   return (
-  <div>
-    <Header/>
-    <ContactForm /> 
-    <Slider />
-    
-  </div>
+    <div>
+      <Header />
+      <Slider />
+    </div>
   )
 }
