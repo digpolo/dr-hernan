@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const NavBar = () => {
   return (
-    <div className='flex justify-center items-center py-6 :p-2 '>
+    <div className='flex justify-center items-center py-6 :p-2 bg-black'>
       <Link href={'/'}>
         <Image 
         alt='logo hernan jojoa' 

@@ -15,7 +15,7 @@ const Header = () => {
                         <li className='py-2'>Rehabilitación Oral</li>
                         <li className='py-2'>Blanqueamiento dental</li>
                     </ul>
-                    <a href='https://wa.me/573102627887?text=Hola,%20deseo%20agendar%20una%20cita' className=' flex justify-center gap-2 text-blue' target="_blank">
+                    <a href='/contacto' className=' flex justify-center gap-2 text-blue'>
                         <p className='text-center text-blue font-[16px]'>Agenda tu cita</p>
                         <div className='mt-1'>
                             <IoIosArrowForward className=' w-5 h-5 ' />
