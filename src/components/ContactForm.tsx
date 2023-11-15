@@ -93,7 +93,7 @@ const ContactForm: React.FC = () => {
           </label>
           <input
             type="email"
-            value={formDetails.phone}
+            value={formDetails.email}
             placeholder="Correo electrónico"
             onChange={(e) => onFormUpdate("email", e.target.value)}
             className={`w-full rounded-xl border-none  bg-gray-900 font-medium text-[16px] pl-3 my-2  py-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500`}
